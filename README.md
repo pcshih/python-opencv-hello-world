@@ -6,7 +6,7 @@ $ docker build \
 --build-arg GID=$(id -g) \
 --build-arg USER_NAME=${USER} \
 --build-arg UID=$(id -u) \
---build-arg PWD=${PWD} \
+--build-arg WD=${PWD} \
 --tag pt/python-opencv-hello-world:latest .
 ```
 

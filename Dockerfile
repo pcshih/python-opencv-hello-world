@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 ARG GID
 ARG USER_NAME
 ARG UID
-ARG PWD
+ARG WD
 
 # to install some package(setup environment)
 RUN \
@@ -30,7 +30,7 @@ RUN wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.
 #pip3 install -r requirements.txt
 
 # work dir in container
-WORKDIR ${PWD}
+WORKDIR ${WD}
 
 # start zsh
 CMD ["zsh"]
