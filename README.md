@@ -19,3 +19,13 @@ $ docker run \
 pt/python-opencv-hello-world:latest \
 zsh
 ```
+
+## install some python packages
+```
+$ pip3 install -r requirements.txt
+```
+
+## run in different user(in order to save in original user privilege)
+```
+$ su ${CURRENT_LOCAL_USER} -c '{SOME_CMDS}'
+```
