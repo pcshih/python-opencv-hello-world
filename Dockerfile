@@ -10,7 +10,6 @@ ARG USER_NAME
 ARG UID
 
 # to install some package(setup environment)
-# add ${USER_NAME} to root group to enable packages path in sys.path
 RUN \
 groupadd -g ${GID} ${USER_NAME} && \
 useradd --create-home --uid ${UID} --gid ${GID} --shell /bin/bash ${USER_NAME} && \
